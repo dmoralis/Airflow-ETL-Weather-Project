@@ -87,3 +87,17 @@
 [2023-09-27T18:12:51.582+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:12:51.582+0000] {dag.py:2915} INFO - Sync 1 DAGs
 [2023-09-27T18:12:51.604+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:12:51.604+0000] {dag.py:3696} INFO - Setting next_dagrun for weather_dag to 2023-09-26T00:00:00+00:00, run_after=2023-09-27T00:00:00+00:00
 [2023-09-27T18:12:51.624+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/weather_dag.py took 0.075 seconds
+[2023-09-27T18:13:28.581+0000] {processor.py:157} INFO - Started process (PID=13009) to work on /home/ubuntu/airflow/dags/weather_dag.py
+[2023-09-27T18:13:28.582+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow/dags/weather_dag.py for tasks to queue
+[2023-09-27T18:13:28.583+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:13:28.583+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/weather_dag.py
+[2023-09-27T18:13:28.594+0000] {processor.py:839} INFO - DAG(s) dict_keys(['weather_dag']) retrieved from /home/ubuntu/airflow/dags/weather_dag.py
+[2023-09-27T18:13:28.615+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:13:28.615+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-27T18:13:28.646+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:13:28.646+0000] {dag.py:3696} INFO - Setting next_dagrun for weather_dag to 2023-09-26T00:00:00+00:00, run_after=2023-09-27T00:00:00+00:00
+[2023-09-27T18:13:28.670+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/weather_dag.py took 0.093 seconds
+[2023-09-27T18:14:03.865+0000] {processor.py:157} INFO - Started process (PID=13261) to work on /home/ubuntu/airflow/dags/weather_dag.py
+[2023-09-27T18:14:03.867+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow/dags/weather_dag.py for tasks to queue
+[2023-09-27T18:14:03.868+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:14:03.867+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/weather_dag.py
+[2023-09-27T18:14:03.882+0000] {processor.py:839} INFO - DAG(s) dict_keys(['weather_dag']) retrieved from /home/ubuntu/airflow/dags/weather_dag.py
+[2023-09-27T18:14:03.904+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:14:03.904+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-27T18:14:03.945+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:14:03.945+0000] {dag.py:3696} INFO - Setting next_dagrun for weather_dag to 2023-09-26T00:00:00+00:00, run_after=2023-09-27T00:00:00+00:00
+[2023-09-27T18:14:03.970+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/weather_dag.py took 0.110 seconds
