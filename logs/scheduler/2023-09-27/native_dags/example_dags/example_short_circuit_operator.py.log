@@ -501,3 +501,10 @@
 [2023-09-27T18:11:44.244+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:11:44.243+0000] {dag.py:2915} INFO - Sync 1 DAGs
 [2023-09-27T18:11:44.268+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:11:44.268+0000] {dag.py:3696} INFO - Setting next_dagrun for example_short_circuit_operator to 2023-09-26T18:11:44.268016+00:00, run_after=2023-09-27T18:11:44.268016+00:00
 [2023-09-27T18:11:44.293+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py took 0.087 seconds
+[2023-09-27T18:12:31.793+0000] {processor.py:157} INFO - Started process (PID=12829) to work on /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2023-09-27T18:12:31.795+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py for tasks to queue
+[2023-09-27T18:12:31.796+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:12:31.796+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2023-09-27T18:12:31.808+0000] {processor.py:839} INFO - DAG(s) dict_keys(['example_short_circuit_operator']) retrieved from /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2023-09-27T18:12:31.837+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:12:31.837+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-27T18:12:31.861+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:12:31.861+0000] {dag.py:3696} INFO - Setting next_dagrun for example_short_circuit_operator to 2023-09-26T18:12:31.861029+00:00, run_after=2023-09-27T18:12:31.861029+00:00
+[2023-09-27T18:12:31.887+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py took 0.097 seconds

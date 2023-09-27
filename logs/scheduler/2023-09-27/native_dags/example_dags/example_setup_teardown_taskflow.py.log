@@ -501,3 +501,10 @@
 [2023-09-27T18:11:53.349+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:11:53.349+0000] {dag.py:2915} INFO - Sync 1 DAGs
 [2023-09-27T18:11:53.369+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:11:53.368+0000] {dag.py:3696} INFO - Setting next_dagrun for example_setup_teardown_taskflow to 2023-09-26T18:11:53.368741+00:00, run_after=2023-09-27T18:11:53.368741+00:00
 [2023-09-27T18:11:53.388+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py took 0.074 seconds
+[2023-09-27T18:12:43.450+0000] {processor.py:157} INFO - Started process (PID=12861) to work on /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2023-09-27T18:12:43.452+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py for tasks to queue
+[2023-09-27T18:12:43.453+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:12:43.452+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2023-09-27T18:12:43.465+0000] {processor.py:839} INFO - DAG(s) dict_keys(['example_setup_teardown_taskflow']) retrieved from /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2023-09-27T18:12:43.484+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:12:43.484+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-27T18:12:43.503+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:12:43.503+0000] {dag.py:3696} INFO - Setting next_dagrun for example_setup_teardown_taskflow to 2023-09-26T18:12:43.503165+00:00, run_after=2023-09-27T18:12:43.503165+00:00
+[2023-09-27T18:12:43.527+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py took 0.080 seconds

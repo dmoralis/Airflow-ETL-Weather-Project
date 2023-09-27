@@ -494,3 +494,10 @@
 [2023-09-27T18:12:13.514+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:12:13.514+0000] {dag.py:2915} INFO - Sync 1 DAGs
 [2023-09-27T18:12:13.557+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:12:13.557+0000] {dag.py:3696} INFO - Setting next_dagrun for example_branch_dop_operator_v3 to 2023-09-27T18:11:00+00:00, run_after=2023-09-27T18:12:00+00:00
 [2023-09-27T18:12:13.586+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py took 0.117 seconds
+[2023-09-27T18:13:05.882+0000] {processor.py:157} INFO - Started process (PID=12919) to work on /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py
+[2023-09-27T18:13:05.883+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py for tasks to queue
+[2023-09-27T18:13:05.884+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:13:05.883+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py
+[2023-09-27T18:13:05.893+0000] {processor.py:839} INFO - DAG(s) dict_keys(['example_branch_dop_operator_v3']) retrieved from /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py
+[2023-09-27T18:13:05.911+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:13:05.911+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-27T18:13:05.932+0000] {logging_mixin.py:151} INFO - [2023-09-27T18:13:05.932+0000] {dag.py:3696} INFO - Setting next_dagrun for example_branch_dop_operator_v3 to 2023-09-27T18:12:00+00:00, run_after=2023-09-27T18:13:00+00:00
+[2023-09-27T18:13:05.952+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py took 0.074 seconds
