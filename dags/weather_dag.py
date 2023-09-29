@@ -3,8 +3,10 @@ from datetime import timedelta, datetime
 from airflow.providers.http.sensors.http import HttpSensor
 from airflow.providers.http.operators.http import SimpleHttpOperator
 from airflow.operators.python import PythonOperator
+from io import StringIO
 import json
 import pandas as pd
+import boto3
 
 
 def kelvinToCelsius(kelvin):
@@ -36,16 +38,37 @@ def transform_load_data(task_instance):
         "Pressure":pressure,
         "Humidity":humidity,
         "Wind_Speed":wind_speed,
-        "Time_of_Record":time_of_record,
-        "Sunrise_(LocalTime)":sunrise_time,
-        "Sunset_(LocalTime)":sunset_time
+        "Time_of_Record":time_of_record.strftime('%d/%M/%Y %H%M'),
+        "Sunrise_(LocalTime)":sunrise_time.strftime('%d/%M/%Y %H%M'),
+        "Sunset_(LocalTime)":sunset_time.strftime('%d/%M/%Y %H%M')
     }]
     df_data = pd.DataFrame(transformed_data)
+    aws_creds = {
+        "key": "****6T",
+        "secret": "****nMW",
+        "token": "*******+A=="
+    }
+    s3 = boto3.client(
+        's3',
+        aws_access_key_id=aws_creds['key'],
+        aws_secret_access_key=aws_creds['secret'],
+        aws_session_token=aws_creds['token']
+    )
 
     now = datetime.now()
     dt_string = now.strftime("%d%m%Y%H:%M:%S")
     dt_string = 'current_weather_data_thessaloniki' + dt_string
-    df_data.to_csv(f"{dt_string}.csv", index=False)
+    bucket_name = '*****les'
+    
+    csv_buffer = StringIO()
+    file_name = f'{dt_string}.csv'
+    df_data.to_csv(csv_buffer, index=False)
+    s3.put_object(
+        Bucket=bucket_name,
+        Key=file_name,
+        Body=csv_buffer.getvalue()
+    )
+    #df_data.to_csv(f"s3://airflowetlweathermorales/{dt_string}.csv", index=False, storage_options=aws_creds)
 
 
 default_args = {
