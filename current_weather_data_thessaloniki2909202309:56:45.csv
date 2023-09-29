@@ -1,0 +1,2 @@
+City,Description,Temperature_(C),Feels_Like,Minimum_Temperature_(C),Maximum_Temperature_(C),Pressure,Humidity,Wind_Speed,Time_of_Record,Sunrise_(LocalTime),Sunset_(LocalTime)
+Thessaloniki,few clouds,26.700000000000045,27.090000000000032,24.910000000000025,28.99000000000001,1019,49,2.06,2023-09-29 12:52:58,2023-09-29 07:22:05,2023-09-29 19:15:18
