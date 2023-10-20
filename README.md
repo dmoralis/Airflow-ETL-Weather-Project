@@ -2,6 +2,8 @@
 
 This project aims to extract weather data using **Weather API** free services, transform the data into the desired format, and save it locally or in an online storage destination. It was created to help me learn and practice various technologies while implementing ETL (Extract, Transform, Load) procedures.
 
+![f1_project_graph](https://github.com/dmoralis/AirflowETLWeatherProject/assets/56253720/c62296be-61a8-4df1-8d62-cb3f92a40941)
+
 ## Technologies Used
 
 - **Apache Airflow**
