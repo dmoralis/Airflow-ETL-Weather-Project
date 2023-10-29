@@ -41,13 +41,3 @@ Both the API and S3 Storage steps require **authentication** tokens to function 
 Future enhancements for this project may include extending data extraction to encompass multiple greek regions and spanning across multiple days. This expanded dataset will enable us to derive valuable insights by utilizing powerful data visualization tools like Power BI and Tableau, thereby broadening the project's scope into the realm of data analysis.
 
 Furthermore, with this enriched dataset, we can explore the exciting possibilities of applying machine learning algorithms. These algorithms can be leveraged to make predictions about future weather conditions, offering valuable forecasts. Additionally, we have the potential to fine-tune and train pre-existing deep learning models, unlocking their full capabilities for more advanced weather forecasting and analysis.
-
-If you want to assist me in this project then follow these steps:
-
-1. Clone this repository to your local machine.
-2. Set up the necessary credentials and configuration files for the Weather API and Amazon S3.
-3. Configure your Apache Airflow instance on the Amazon EC2 VM.
-4. Create the `weather_dag.py` file and define the ETL workflow as described in the setup section.
-5. Execute the DAG to start the ETL process.
-
-Happy coding! 🚀
