@@ -22,7 +22,7 @@ This project seamlessly integrates various technologies to execute the ETL proce
 
 **Amazon S3 Storage** serves as the designated destination for storing the processed weather data, ensuring data durability and accessibility. Processed data is transformed into the desired CSV format and saved to Amazon S3.
 
-## DAG Setup
+### DAG Setup
 
 To set up the DAG of the project, we follow these steps:
 
